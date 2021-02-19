@@ -91,7 +91,7 @@ function configureAndInstall()
 
   #Building ruby
   printf -- 'Building ruby \n'
-  ./configure
+  ./configure --with-gcc=`which gcc`
   make
 
   #Installation step
